@@ -1,0 +1,32 @@
+.expanded {
+  border-left: 1px solid #000;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  grid-column: 1 / -1;
+}
+
+.collapsed {
+  display: none;
+}
+
+.tree {
+  display: grid;
+  grid-template-columns: auto auto auto minmax(0, 1fr);
+}
+
+input {
+  width: auto;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  height: 16px;
+  user-select: none;
+}
