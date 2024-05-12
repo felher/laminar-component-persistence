@@ -1,6 +1,6 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-val scala3Version = "3.4.0"
+val scala3Version = "3.4.1"
 val circeVersion  = "0.14.7"
 
 lazy val magicvar = project
@@ -40,7 +40,7 @@ lazy val magicvar = project
      * It provides static types for the browser DOM APIs.
      */
     libraryDependencies ++= Seq(
-      "org.scala-js" %%% "scalajs-dom" % "2.4.0",
+      "org.scala-js" %%% "scalajs-dom" % "2.8.0",
       "com.raquo"    %%% "laminar"     % "16.0.0"
     ),
     libraryDependencies ++= Seq(
