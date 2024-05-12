@@ -31,7 +31,7 @@ class TreeComponent(
         )
       ),
       span(className("toggle-info"), child.text <-- numToggled.signal.map(nt => s"[Toggled $nt times]")),
-      img(src("trash.png"), onClick --> (_ => onTreeEvent.onNext(TreeEvent.Remove(key)))),
+      img(src("trash.png"), onClick.mapTo(TreeEvent.Remove(key)) --> onTreeEvent),
       div(
         className <-- expanded.signal.map(if (_) "expanded" else "collapsed"),
         children <-- Component.split(t.map(_.children))(_.id)((key, sig) => TreeComponent(key, sig, onTreeEvent)),
