@@ -1,5 +1,6 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
+ 
 val scala3Version = "3.4.1"
 val circeVersion  = "0.14.7"
 
@@ -41,7 +42,7 @@ lazy val magicvar = project
      */
     libraryDependencies ++= Seq(
       "org.scala-js" %%% "scalajs-dom" % "2.8.0",
-      "com.raquo"    %%% "laminar"     % "16.0.0"
+      "com.raquo"    %%% "laminar"     % "17.0.0"
     ),
     libraryDependencies ++= Seq(
       "io.circe" %%% "circe-core",
