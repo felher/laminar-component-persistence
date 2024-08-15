@@ -1,6 +1,6 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-val scala3Version = "3.4.2"
+val scala3Version = "3.4.3"
 val circeVersion  = "0.14.7"
 
 lazy val magicvar = project
